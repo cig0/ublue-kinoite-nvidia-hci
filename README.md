@@ -1,4 +1,4 @@
-# Starting point
+# ublue-kinoite-nvidia-hci
 
 [![build-ublue](https://github.com/cig0/ublue-kinoite-nvidia-hci/actions/workflows/build.yml/badge.svg)](https://github.com/cig0/ublue-kinoite-nvidia-hci/actions/workflows/build.yml)
 
