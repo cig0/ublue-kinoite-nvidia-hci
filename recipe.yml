@@ -50,6 +50,9 @@ rpms:
   - gstreamer1-plugin-openh264
   - mozilla-openh264
   # Other
+  - code
+  - sublime-merge
+  - sublime-text
   - syncthing
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
