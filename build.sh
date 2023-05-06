@@ -29,7 +29,7 @@ done
 echo "---"
 
 # install yafti to install flatpaks on first boot, https://github.com/ublue-os/yafti
-pip install --prefix=/usr yafti
+#pip install --prefix=/usr yafti
 
 # add a package group for yafti using the packages defined in recipe.yml
 flatpaks=$(yq '.flatpaks[]' < /tmp/ublue-recipe.yml)
