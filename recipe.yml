@@ -49,6 +49,7 @@ rpms:
   # Multimedia
   - gstreamer1-plugin-openh264
   - mozilla-openh264
+  - openh264
   # Other
   - syncthing
 # These Flatpaks (from flathub) will be available for install on boot
