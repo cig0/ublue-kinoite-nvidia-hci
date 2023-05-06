@@ -30,12 +30,16 @@ setup-pwa:
 #  /usr/bin/ublue-nix-install
 
 set-kargs:
-    rpm-ostree kargs \
-        --append=rd.driver.blacklist=nouveau \
-        --append=modprobe.blacklist=nouveau \
-        --append=nvidia-drm.modeset=1 \
-        --append=mem_sleep_default=deep \
-        --append=initcall_blacklist=simpledrm_platform_driver_init
+  rpm-ostree kargs \
+    --append=rd.driver.blacklist=nouveau \
+    --append=modprobe.blacklist=nouveau \
+    --append=nvidia-drm.modeset=1 \
+    --append=mem_sleep_default=deep \
+    --append=initcall_blacklist=simpledrm_platform_driver_init
+
+rpm-fusion:
+  rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
+    && rpm-ostree install gstreamer1-plugin-openh264 openh264
 
 update:
   #!/bin/bash
