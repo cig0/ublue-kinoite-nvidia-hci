@@ -1,9 +1,6 @@
 default:
   @just --list
 
-bios:
-  systemctl reboot --firmware-setup
-
 changelogs:
   rpm-ostree db diff --changelogs
 
